@@ -1,20 +1,16 @@
-ljudi = {
-    "osoba1" : {
-    "Ime":"Amar",
-    "Prezime":"Softic",
-"Godine":"29"
-},
-
-"osoba2": {
-"Ime":"Eldar",
-    "Prezime":"Huremovic",
-"Godine":"32"
-},
-"osoba3" :{
-"Ime":"Amar",
-    "Prezime":"Softic",
-"Godine":"29"
+people = {
+    "person1": {
+        "name": "Toma",
+        "last_name": "Nikolic"
+    },
+    "person2": {
+        "name": "Petar",
+        "last_name": "Pavlovic"
+    },
+    "person3": {
+        "name": "Mihajlo",
+        "last_name": "Folic"
+    }
 }
 
-}
-print(ljudi)
+print(people)
