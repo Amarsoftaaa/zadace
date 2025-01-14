@@ -1,0 +1,51 @@
+products = {
+    "audi" : {
+        "color" : "crna",
+        "amount" : 20,
+        "preis" : 2000
+        },
+    "bmw" : {
+        "color" : "plava",
+        "amount" : 59,
+        "preis" : 10000
+    },
+    "mercedes" : {
+        "color" : "crvena",
+        "amount" : 40,
+        "preis" : 20000
+    }
+}
+
+option = None
+
+while option not in ["dodaj", "obrisi", "izlistaj"]:
+        option = input("Odaberite radnju koju zelite izvrsiti")
+        if option == "dodaj":
+            product = None
+            color = None
+            amount = None
+
+            while product not in products or product == None:
+                product = input("Koji auto zelite unijeti")
+                print (f"Uspjesno ste dodali {product} ")
+                color = input("Koje je boje auto")
+                print(f"Boja auta je {color}")
+                preis = int(input("Kolika je cjena auta"))
+                print(f"Auto kosta {preis}")
+                products[product] = {color,preis}
+                
+                option = None
+        elif option == "obrisi":
+            product = None
+            while product in products or product == None:
+                product = input("Koji auto zelite obrisati")
+                del products[product]
+                option = None
+        elif option == "izlistaj":
+            print (products)
+            option = None
+
+
+
+
+
